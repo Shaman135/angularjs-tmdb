@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="./styles/actor-compact.css">
+<div class="media-body bg-dark">
+  <img class="profile" ng-src="{{ actorCompact.profile_pic }}" alt='http://via.placeholder.com/100x142'>
+  <h5 class="mt-0 mb-1">
+    <a ng-link="['ActorDetails', {id: actorCompact.actor.id}]">{{actorCompact.actor.name}}</a>
+  </h5>
+</div>

@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="./styles/style.css">
+<div class="container-fluid">
+    <div class="flex-row col-md-10 offset-md-1">
+        <hr>
+        <h1>Nadchodzące premiery</h1>
+        <hr>
+        <div class="card-deck">
+            <div class="fixed-div" ng-repeat="movie in upcomingController.movies">
+                <movie-short-component movie='movie'></movie-short-component>
+            </div>
+        </div>
+    </div>
+</div>

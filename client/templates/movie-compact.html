@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="./styles/movie-detail.css">
+<div class="media-body">
+  <img class="profile" ng-src="{{ movieCompact.poster }}" alt='http://via.placeholder.com/100x142'>
+  <h5 class="mt-0 mb-1"><a ng-link="['MovieDetails', {id: movieCompact.movie.id}]">{{ movieCompact.movie.title }}</a>
+    jako: <i>{{ movieCompact.movie.character ?  movieCompact.movie.character : 'Brak danych' }}</i></h5>
+</div>

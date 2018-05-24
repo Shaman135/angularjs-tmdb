@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="./styles/style.css">
+<div class="container-fluid">
+    <div class="flex-row col-md-10 offset-md-1">
+        <hr>
+        <h1>Popularni aktorzy</h1>
+        <hr>
+        <label>
+            <b>Wyszukaj aktora po imieniu: </b>
+        </label>
+        <input class="form-control" ng-model="searchName">
+        <hr>
+        <button class="btn btn-secondary" ng-click="actorsList.sortBy('name')">Sortuj alfabetycznie</button>
+        <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+        <hr>
+        <div class="card-deck">
+            <div class="fixed-div" ng-repeat="actor in actorsList.actors | nameFilter: searchName">
+                <actor-compact-component actor='actor'></actor-compact-component>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="pagination">
+        <button class="btn btn-secondary nav-btn" ng-disabled="actorsList.page === 1" ng-click='actorsList.previousPage()'>Poprzednia strona</button>
+        <button class="btn btn-secondary nav-btn" ng-disabled="actorsList.page === 5" ng-click='actorsList.nextPage()'>Następna strona</button>
+    </div> -->
+</div>

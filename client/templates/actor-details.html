@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="./styles/movie-detail.css">
+<div clas="container-fluid">
+  <div class="flex-row col-md-10 offset-md-1">
+    <hr>
+    <h1>{{ actorController.actor.name }}</h1>
+    <hr>
+    <div class="bordered bg-dark">
+      <hr>
+      <img ng-src="{{ actorController.profile_pic }}" class="detail_pic">
+      <hr>
+      <h3>Płeć: {{ actorController.actor.gender | gender }}</h3>
+      <p ng-if="actorController.actor.biography">{{ actorController.actor.biography }}</p>
+      <h3>Data urodzin: {{ actorController.actor.birthday }}</h3>
+      <h3 ng-if="actorController.actor.deathday">Data śmierci: {{ actorController.actor.deathday }}</h3>
+      <h3>Miejsce urodzenia: {{ actorController.actor.place_of_birth }}</h3>
+      <h3>
+        Filmografia:
+      </h3>
+      <div class="cast_list">
+        <ul class="list-unstyled">
+          <li class="media" ng-repeat="movie in actorController.movies">
+            <movie-compact-component movie='movie'></movie-compact-component>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>

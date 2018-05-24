@@ -1,0 +1,11 @@
+<div class="card border-dark text-white bg-dark">
+    <img class="card-img-top small-poster" ng-src="{{ movieShort.poster }}" alt="Card image cap">
+    <div class="card-body">
+        <h4 class="card-title">{{ movieShort.movie.title }}</h4>
+        <p class="card-text">
+          <b>Oryginalny tytuł: </b><br/> {{ movieShort.movie.original_title }} <br/>
+          <b>Średnia ocen: </b><br/> {{ movieShort.movie.vote_average | rating }} <br/>
+          <a ng-link="['MovieDetails', {id: movieShort.movie.id}]">Czytaj więcej...</a>
+        </p>
+    </div>
+</div>

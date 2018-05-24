@@ -1,0 +1,92 @@
+body {
+  background-color: #ffa948;
+}
+
+.navbar-brand {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 24px;
+}
+
+.white-text {
+  color: white;
+}
+
+h1 {
+  font-family: "Roboto";
+  padding: 8px;
+  text-align: center;
+}
+
+.p-small {
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Roboto", cursive;
+}
+
+h3 {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Roboto";
+  font-size: 24px;
+  text-align: left;
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+p {
+  padding-left: 16px;
+  padding-right: 8px;
+  text-align: justify;
+  word-wrap: break-word;
+  color: white;
+}
+
+.fixed-div {
+  width: 258px;
+  padding: 8px;
+}
+
+.detail_pic {
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+  height: 187.5px;
+  border-radius: 10px;
+}
+
+.fixed-div > .card-img-top.small-poster {
+  width: 250px;
+  text-align: center;
+}
+
+.cast_list {
+  padding: 16px;
+}
+
+.media-body {
+  padding: 8px;
+  margin: 8px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.profile {
+  width: 100px;
+  padding: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .detail_pic {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 375px;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="./styles/movie-detail.css">
+<div clas="container-fluid">
+  <div class="flex-row col-md-10 offset-md-1">
+    <hr>
+    <h1>{{ movieController.movie.title }}</h1>
+    <hr>
+    <div class="bordered bg-dark">
+      <hr>
+      <img ng-src="{{ movieController.poster }}" class="detail_pic">
+      <hr>
+      <h3>
+        Opis:
+      </h3>
+      <p>
+        {{ movieController.movie.overview }}
+      </p>
+      <h3>Reżyser: {{ movieController.director }}</h3>
+      <h3>Gatunek: {{ movieController.genres }}</h3>
+      <h3>
+        Data premiery: {{ movieController.movie.release_date }}
+      </h3>
+      <h3>
+        Obsada:
+      </h3>
+      <div class="cast_list">
+        <ul class="list-unstyled">
+          <li class="media" ng-repeat="actor in movieController.actors">
+            <actor-short-component actor='actor'></actor-short-component>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>

@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="./styles/style.css">
+<div class="container-fluid">
+    <div class="flex-row col-md-10 offset-md-1">
+        <hr>
+        <h1>Popularne filmy</h1>
+        <hr>
+        <label><b>Ogranicz do minimalnej oceny: </b></label>
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                {{ moviesList.selected }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" ng-repeat="rating in moviesList.ratings" ng-click="moviesList.selected = rating">{{ rating }}</a>
+            </div>
+        </div>
+        <hr>
+        <label><b>Wyszukaj tytuł: </b></label>
+        <input class="form-control" ng-model="searchTitle">
+        <hr>
+        <button class="btn btn-secondary" ng-click="moviesList.sortBy('vote_average')">Sortuj wg. ocen</button>
+        <span class="sortorder" ng-show="propertyName === 'vote_average'" ng-class="{reverse: reverse}"></span>
+        <button class="btn btn-secondary" ng-click="moviesList.sortBy('title')">Sortuj alfabetycznie</button>
+        <span class="sortorder" ng-show="propertyName === 'title'" ng-class="{reverse: reverse}"></span>
+        <hr>
+        <div class="card-deck">
+            <div class="fixed-div" ng-repeat="movie in moviesList.movies | aboveRating: moviesList.selected | titleFilter: searchTitle">
+                <movie-short-component movie='movie'></movie-short-component>
+            </div>
+        </div>
+    </div>
+</div>

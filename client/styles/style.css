@@ -1,0 +1,96 @@
+body {
+  background-color: #ffa948;
+}
+
+.navbar-brand {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 24px;
+}
+
+.white-text {
+  color: white;
+}
+
+h1 {
+  font-family: "Roboto";
+  padding: 8px;
+  text-align: center;
+}
+
+.p-small {
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Roboto", cursive;
+}
+
+h3 {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Roboto";
+  font-size: 24px;
+  text-align: left;
+}
+
+p {
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.btn-group {
+  padding: 8px;
+}
+
+.fixed-div {
+  width: 258px;
+  padding: 8px;
+}
+
+.detail_pic {
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+  height: 187.5px;
+  border-radius: 10px;
+}
+
+.fixed-div > .card-img-top.small-poster {
+  width: 250px;
+  text-align: center;
+}
+
+.cast_list {
+  padding: 16px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.card-text {
+  padding: 0px;
+}
+
+.pagination {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn-secondary.nav-btn {
+  display: inline-block;
+  margin: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .detail_pic {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 375px;
+    border-radius: 10px;
+  }
+}

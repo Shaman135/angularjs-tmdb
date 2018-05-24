@@ -1,0 +1,23 @@
+{
+  "name": "projektangularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js && echo \"Visit http://localhost:3000/\""
+  },
+  "author": "Piotr",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angular-route": "^1.6.9",
+    "angular-router": "0.0.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}

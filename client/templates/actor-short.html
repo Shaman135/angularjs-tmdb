@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="./styles/movie-detail.css">
+<div class="media-body">
+  <img class="profile" ng-src="{{ actorShort.profile_pic }}" alt='http://via.placeholder.com/100x142'>
+  <h5 class="mt-0 mb-1">
+    <a ng-link="['ActorDetails', {id: actorShort.actor.id}]">{{actorShort.actor.name}}</a>
+    <span ng-if="actorShort.actor.character">jako:
+      <i>{{ actorShort.actor.character }}</i>
+    </span>
+  </h5>
+</div>

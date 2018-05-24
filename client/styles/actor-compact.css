@@ -1,0 +1,17 @@
+.profile {
+  width: 150px;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 2px;
+}
+
+h5 {
+  padding-top: 16px;
+}
+
+.media-body {
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  border-width: 2px;
+}
